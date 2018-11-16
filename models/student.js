@@ -25,7 +25,13 @@ module.exports = (sequelize, DataTypes) => {
         }
       }
     },
-    phone: DataTypes.STRING,
+    phone: {
+      type: DataTypes.STRING,
+      validate:{
+        is: /^[0-9]*$/i,
+        len: [10,13], 
+      }
+    },
     height: {
       type: DataTypes.INTEGER,
       validate:{
