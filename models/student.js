@@ -1,4 +1,6 @@
 'use strict';
+
+let View = require(`../View/view`)
 module.exports = (sequelize, DataTypes) => {
   const Student = sequelize.define('Student', {
     first_name: DataTypes.STRING,
@@ -55,7 +57,7 @@ module.exports = (sequelize, DataTypes) => {
         return obj
       })
 
-      console.log(data);
+      View.viewData(data)
     }).catch((err) => {
       console.log(err);
     });
