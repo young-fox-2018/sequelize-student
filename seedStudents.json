@@ -1,0 +1,38 @@
+[
+    {
+        "first_name": "Nikolas",
+        "last_name": "Friesen",
+        "gender": "female",
+        "birthday": "1998-12-24",
+        "email": "agustina_braun@wintheiser.info",
+        "phone": "449.897.7415",
+        "height": 157
+    },
+    {
+        "first_name": "Randi",
+        "last_name": "Halvorson",
+        "gender": "male",
+        "birthday": "1997-01-29",
+        "email": "heber.upton@wintheiser.biz",
+        "phone": "(697)436-2633",
+        "height": 173
+    },
+    {
+        "first_name": "Sally",
+        "last_name": "Buckridge",
+        "gender": "female",
+        "birthday": "1997-10-30",
+        "email": "nora@treutel.name",
+        "phone": "322.323.7897",
+        "height": 168
+    },
+    {
+        "first_name": "Morris",
+        "last_name": "Swift",
+        "gender": "male",
+        "birthday": "1995-06-27",
+        "email": "cordell@man.info",
+        "phone": "(697)983-3323",
+        "height": 175
+    }
+]
