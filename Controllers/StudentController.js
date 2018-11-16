@@ -54,7 +54,7 @@ class StudentController {
             gender:"female",
             birthday: "2000-08-03",
             email: "doug@roberts.biz",
-            phone:"11-334a",
+            phone:"11-34a",
             CreateAt:new Date(),
             updateAt:new Date(),
             height:135
