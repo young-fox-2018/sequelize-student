@@ -21,8 +21,10 @@ class studentController{
                      View.display(`Data ${input[0]} ${input[1]} has been succesfully added to Students`)
                  })
                  .catch(err =>{
-                     console.log('masuk kesini')
-                    //  View.displayError(err)
+                    //  console.log('masuk kesini')
+                    err.errors.map(err =>{
+                        View.displayError(err.message)
+                    })
                  })
                 break;
                 
