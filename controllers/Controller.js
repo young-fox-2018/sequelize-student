@@ -39,7 +39,15 @@ class Controller {
             View.displaySuccess("Berhasil menambahkan data")
         })
         .catch(err => {
-            View.displayError(err)
+            if(typeof(err) == 'object') {
+                let data = []
+                err.errors.forEach(element => {
+                    data.push (element.message)
+                });
+                View.displayError(data)
+            }else{
+                View.displayError(err)
+            }
         })
     }
 

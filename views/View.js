@@ -7,7 +7,7 @@ class View {
 
     static displaySuccess(message){
         console.log(message)
-        process.exit()
+        // process.exit()
     }
 }
 
