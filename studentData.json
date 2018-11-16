@@ -1,0 +1,42 @@
+[
+    {
+        "first_name": "Nikolas",
+        "last_name": "Friesen",
+        "gender": "female",
+        "birthday": "1998-12-24",
+        "email": "Nicolas@email.com",
+        "phone": "0815000001"
+    },
+    {
+        "first_name": "Randi",
+        "last_name": "Halforson",
+        "gender": "female",
+        "birthday": "1998-12-24",
+        "email": "Nicolas@email.com",
+        "phone": "0815000002"
+    },
+    {
+        "first_name": "Nikolas",
+        "last_name": "tesla",
+        "gender": "female",
+        "birthday": "1998-12-24",
+        "email": "Nicolas@email.com",
+        "phone": "0815000001"
+    },
+    {
+        "first_name": "Nikolas",
+        "last_name": "stan",
+        "gender": "female",
+        "birthday": "1998-12-24",
+        "email": "Nicolas@email.com",
+        "phone": "0815000001"
+    },
+    {
+        "first_name": "Nikolas",
+        "last_name": "hooq",
+        "gender": "female",
+        "birthday": "1998-12-24",
+        "email": "Nicolas@email.com",
+        "phone": "0815000001"
+    }
+]
