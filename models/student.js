@@ -38,7 +38,15 @@ module.exports = (sequelize, DataTypes) => {
       validate: {
         len: {
           args: [10, 13],
-          msg: `Minimum length 10 & Maximum length 13`
+          msg: `Phone length must be 10-13`
+        },
+        isAlphanumeric: {
+          args: true,
+          msg: `Phone could not contain non-alphanumeric`
+        },
+        isAlpha: {
+          args: true,
+          msg: `Phone could not contain letters`
         }
       }
     },
