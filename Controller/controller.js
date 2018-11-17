@@ -41,15 +41,21 @@ class Controller {
         })
     }
 
-    static create(input) {
-        console.log(input)
+    static create() {
+        // console.log(input)
         Student.create({
-            first_name: input[0],
-            last_name: input[1],
-            gender: input[2],
-            birthday: input[3],
-            email: input[4],
-            phone: input[5]
+            first_name: "maitreya",
+            last_name: "angabhaya",
+            gender: "female",
+            birthday: "1999-5-5",
+            email: "pepe@mail.com",
+            phone: "0896789087",
+            heigth: 148
+        }).then(data => {
+            View.displayNewData(data)
+            process.exit()
+        }).catch(err => {
+            View.displayNewData(err)
         })
     }
 }

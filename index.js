@@ -15,5 +15,5 @@ switch (command) {
     case "getFemaleStudent": Controller.femaleStudents();
     break;
 
-    case "create" : Controller.create(options)
+    case "create" : Controller.create()
 }

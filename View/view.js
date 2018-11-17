@@ -11,6 +11,10 @@ class View {
     static displayFemaleStudent(input) {
         console.log(input)
     }
+
+    static displayNewData(input) {
+        console.log(input)
+    }
 }
 
 module.exports = View

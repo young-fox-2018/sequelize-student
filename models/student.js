@@ -5,29 +5,35 @@ module.exports = (sequelize, DataTypes) => {
     last_name: DataTypes.STRING,
     gender: DataTypes.STRING,
     birthday: DataTypes.STRING,
+
     email: {
       type : DataTypes.STRING,
       validate : {
         isEmail : true,
-        msg : "Invalid email format"
-      },
-      isUnique(value) {
-        return Student.findOne({
-          where : {
-            email : value
-          }
-        }).then(data => {
-            if(data) {
-              throw new error("Email already exist!");
-              
+        isUnique(value) {
+          return Student.findAll({
+            where : {
+              email : value
             }
-        }).catch(err => {
+          }).then(data => {
+              if(data) {
+                throw new error("Email already exist!");
+              }
+          })
+          .catch(err => {
             throw new error(err)
-        })
+          })
+        }
       }
     },
-    
-    phone: DataTypes.STRING
+    phone: {
+      type : DataTypes.STRING,
+      validate : {
+        isAlphanumeric: true,
+        len: [10, 13]
+      }
+    },
+    heigth: DataTypes.INTEGER
   }, {});
 
   Student.associate = function(models) {
