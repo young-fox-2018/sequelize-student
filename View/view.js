@@ -1,3 +1,4 @@
+
 class View {
     static displayFullName(input) {
         console.log(input)

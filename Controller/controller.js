@@ -40,6 +40,18 @@ class Controller {
             View.displayFemaleStudent(err)
         })
     }
+
+    static create(input) {
+        console.log(input)
+        Student.create({
+            first_name: input[0],
+            last_name: input[1],
+            gender: input[2],
+            birthday: input[3],
+            email: input[4],
+            phone: input[5]
+        })
+    }
 }
 
 module.exports = Controller

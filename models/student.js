@@ -5,7 +5,28 @@ module.exports = (sequelize, DataTypes) => {
     last_name: DataTypes.STRING,
     gender: DataTypes.STRING,
     birthday: DataTypes.STRING,
-    email: DataTypes.STRING,
+    email: {
+      type : DataTypes.STRING,
+      validate : {
+        isEmail : true,
+        msg : "Invalid email format"
+      },
+      isUnique(value) {
+        return Student.findOne({
+          where : {
+            email : value
+          }
+        }).then(data => {
+            if(data) {
+              throw new error("Email already exist!");
+              
+            }
+        }).catch(err => {
+            throw new error(err)
+        })
+      }
+    },
+    
     phone: DataTypes.STRING
   }, {});
 
@@ -14,7 +35,7 @@ module.exports = (sequelize, DataTypes) => {
   };
 
   Student.prototype.getFullName = function() {
-    return this.first_name + " " + this.last_name
+    return `${this.first_name} ${this.last_name}`
   }
 
   Student.prototype.getAge = function() {
